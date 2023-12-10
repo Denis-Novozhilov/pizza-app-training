@@ -1,0 +1,18 @@
+:root {
+	--primary-color: #fe724c;
+	--primary-hover-color: #df6442;
+	--text-color: #000;
+	--text-accent-color: #ffffff;
+	--light-background-color: #ffffff;
+	--text-secondary-color: #5b5b5e;
+	--text-secondary-light-color: #c4c4c4;
+	--separator-color: #d4d6e0;
+	--error-color: rgba(255, 0, 0, 0.863);
+	--font: 'Open Sans', sans-serif;
+	--primary-shadow: 5px 5px 12px 0px rgba(214, 123, 38, 0.5);
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}

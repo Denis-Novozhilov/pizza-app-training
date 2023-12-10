@@ -1,0 +1,8 @@
+[] refresh with no full load to product page
+[] delete all comments
+[] save to tg or youtube vhen and how resolve short import address issue
+[] repair error modal window
+[] write server logic to pizza-app if it could be expedient
+[] Separate ScaleUp animation in index.css variable or mixin
+[] Improve Cat sticker with svg
+[] Make 5-10 defferent Cat Stickers for Cart Counter
