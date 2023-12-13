@@ -1,27 +1,97 @@
-/* .button {
-	font-size: 1em;
-	font-family: inherit;
+.item {
+	display: flex;
+	gap: 20px;
+	max-width: 512px;
+	margin-bottom: 27px;
+}
+.image {
+	width: 82px;
+	height: 82px;
+	background-size: cover;
+	border-radius: 20px;
+	filter: drop-shadow(0px 8px 25px rgba(224, 219, 196, 0.9));
+}
+
+.actions {
+	margin-left: auto;
+	display: flex;
+	gap: 5px;
+	/* align-items: flex-start; */
+	align-items: center;
+	align-self: flex-start;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.name {
+	color: var(--text-color);
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+.price {
+	color: var(--primary-color);
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+.button {
+	/* outline: 1px solid red; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* font-size: 1em; */
+	/* font-family: inherit; */
 	cursor: pointer;
 	border: none;
-	color: var(--text-accent-color);
+	/* color: var(--text-accent-color); */
 	transition: background-color 0.25s;
-	border-radius: 30px;
-	font-style: normal;
-	font-weight: 400;
+	background: none;
+	/* font-style: normal; */
+	/* font-weight: 400; */
 }
+.icon {
+	width: 2em;
+	height: 2em;
+}
+.icon-remove {
+	width: 2.1em;
+	height: 2.1em;
+}
+.icon,
+.icon-remove {
+	color: var(--primary-color);
 
-.small {
+	transition: all ease-in-out 0.2s;
+}
+.button:active {
+	transform: scale(1.2);
+}
+.icon:hover,
+.icon-remove:hover {
+	transform: scale(1.2);
+}
+.count-number {
+	color: var(--text-color);
+	font-size: 1.35em;
+	font-weight: 600;
+}
+/* .small {
 	font-size: 16px;
 	padding: 10px 25px;
-}
+} */
 
-.big {
+/* .big {
 	font-size: 15px;
 	padding: 20px 60px;
 	box-shadow: var(--primary-shadow);
-}
+} */
 
-.accent {
+/* .accent {
 	background-color: var(--primary-color);
 }
 .accent:hover {

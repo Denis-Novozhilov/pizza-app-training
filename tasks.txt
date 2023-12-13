@@ -6,3 +6,4 @@
 [] Separate ScaleUp animation in index.css variable or mixin
 [] Improve Cat sticker with svg
 [] Make 5-10 defferent Cat Stickers for Cart Counter
+[] Cart saved on backend?

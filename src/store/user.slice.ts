@@ -3,7 +3,7 @@ import axios, { AxiosError } from 'axios';
 import { PREFIX } from 'src/helpers/api';
 import { LoginResponse } from 'src/interfaces/auth.interface';
 import { ProfileResponse } from 'src/interfaces/profile.interface';
-import { loadState } from './storage';
+import { loadLocalState } from './storage';
 import { RootState } from './store';
 
 export interface UserPersistentState {
@@ -22,8 +22,8 @@ export const JWT_STORAGE_KEY = 'userData';
 export const PROFILE_STORAGE_KEY = 'userProfile';
 
 const initialState: UserState = {
-	jwt: loadState<UserPersistentState>(JWT_STORAGE_KEY)?.jwt ?? null,
-	profile: loadState<ProfileResponse>(PROFILE_STORAGE_KEY) ?? null
+	jwt: loadLocalState<UserPersistentState>(JWT_STORAGE_KEY)?.jwt ?? null,
+	profile: loadLocalState<ProfileResponse>(PROFILE_STORAGE_KEY) ?? null
 };
 
 export const loginThunk = createAsyncThunk(

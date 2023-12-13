@@ -7,6 +7,7 @@ import { PREFIX } from 'src/helpers/api';
 import { Product } from 'src/interfaces/product.interface';
 import { RootState } from 'src/store/store';
 import { v4 as uuidv4 } from 'uuid';
+import styles from './Cart.module.css';
 
 export function Cart() {
 	const [cartProducts, setCartProducts] = useState<Product[]>([]);
@@ -28,7 +29,7 @@ export function Cart() {
 
 	return (
 		<>
-			<Headling>Корзина</Headling>
+			<Headling className={styles.headling}>Корзина</Headling>
 			{items.map((i) => {
 				const product = cartProducts.find((p) => p.id === i.id);
 				if (!product) {
