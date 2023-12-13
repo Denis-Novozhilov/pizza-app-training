@@ -7,3 +7,11 @@
 [] Improve Cat sticker with svg
 [] Make 5-10 defferent Cat Stickers for Cart Counter
 [] Cart saved on backend?
+[] Add promo codes?
+[] Separate all constants in separated file
+[] Add ScaleDown animation to remove UI items
+[] checkout try catch
+[] Login error popup
+[] self made backend
+[] If api will alive - check store, checkout, and CartItems, LocalStorage, ReduxStore 
+[] Add button in MENU - proceed in Cart and make order if something already in a Cart

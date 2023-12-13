@@ -1,0 +1,13 @@
+.success {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+.success-img {
+	max-width: 256px;
+	max-height: 256px;
+	color: var(--primary-color);
+}

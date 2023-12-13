@@ -62,6 +62,9 @@ export const cartSlice = createSlice({
 					}
 				});
 			}
+		},
+		clear: (state) => {
+			state.items = [];
 		}
 	}
 });
